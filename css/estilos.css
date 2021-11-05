@@ -1,15 +1,15 @@
 .body{
     margin:0;
     padding: 0;
+    background-color: #68B0E0;
 }
 .header{
-    background-color: #7F44AA;
     margin-bottom: -2.5%;
 }
 .header h1{
     font-family: 'Shadows Into Light', cursive;
-    margin-left: 8%;
-    font-size: 40px;
+    font-size: 50px;
+    text-align: center;
 }
 .foto404 img{
     margin-left: 30%;
@@ -20,7 +20,6 @@
 .section1{
     display: flex;
     flex-wrap: wrap;
-    background-color: #7F44AA;
     margin:0;
     display: flex;
     justify-content: center;
@@ -41,7 +40,6 @@
 }
 
 .section2{
-    background-color: #68B0E0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -177,6 +175,29 @@
 }
 
 @media screen and (max-width: 580px){
+.header h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 32px;
+    text-align: center;
+    margin:1%;
+    margin-top: 7%;
+    background-color:rgb(150, 48, 181)
+    }
+.foto404 img{
+     margin-left: 10%;
+     margin-top: 7%;
+     width: 80%;
+     justify-content: center;
+    }
+.buscador{
+    text-align: center;
+    font-size: 15px;
+}
+.buscar input:hover{
+    width:40%;
+    background-color: #fff;
+    border-color: rgb(11, 68, 182);
+}
 .barassimovil{
     display: none;
 }
@@ -192,10 +213,10 @@
 }
 @keyframes movimiento {
     0%{
-       transform: rotate(0deg);
+       transform: rotate(-2deg);
     }
     100%{
-        transform: rotate(4deg);
+        transform: rotate(-10deg);
     }
 }
 .explicando img{
@@ -204,8 +225,8 @@
 .mano img{
     width: 30%;
     position: absolute;
-    right: 29%;
-    bottom: -1%;
+    right: 30%;
+    bottom: 14%;
     animation-name: movimiento;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -214,12 +235,20 @@
 }
 .texto2{
     position: absolute;
-    right: 50%;
-    bottom: 15%;
+    right: 49%;
+    bottom: 20%;
     font-size: 20px;
     font-family: 'Shadows Into Light', cursive;
     display: flex;
     text-align: center;
     transform: rotate(-8deg);
+    line-height : 50px;
+}
+.texto2 a{
+    text-decoration: none;
+    background-color: rgb(113, 28, 138);
+    color: white; 
+    border-radius: 5px;
+    padding: 3%;
 }
 }
