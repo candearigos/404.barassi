@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     background-color: #68B0E0;
+    overflow-x: hidden;
 }
 .header{
     margin-bottom: -2.5%;
@@ -37,42 +38,47 @@
 }
 @keyframes nube1{
     0%{
-        right: 50%;
+        right: -20%;
         opacity: 100%;
 
     }
+    80%{
+        opacity: 100%;
+    }
     100%{
-       right: 100%;
+       right: 101%;
        opacity: 0%;
     }
 }
 @keyframes nube2{
     0%{
-        right: 10%;
-        opacity: 100%
-
+        right: -5%;
+        opacity: 10%
+ }
+    90%{
+        opacity: 100%;
     }
     100%{
-       right: 60%;
+       right: 120%;
        opacity: 0%;
     }
 }
 .nube2 img{
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: -5%;
     z-index: 0;
     animation-name: nube2;
-    animation-duration: 5s;
+    animation-duration: 11s;
     animation-iteration-count: infinite;
 }
 .nube1 img{
     position: absolute;
     top: 10%;
-    right: 50%;
+    right: -20%;
     z-index: 0;
     animation-name: nube1;
-    animation-duration: 5s;
+    animation-duration: 11s;
     animation-iteration-count: infinite;
 }
 .dario img{
@@ -100,9 +106,12 @@
     margin-top: 25%;
 }
 .buscar{
-    margin-left: 2%;
+    margin-left: 40%;
     margin-top: 5%;
     margin-bottom: 5%;
+    text-align: center;
+    position: absolute;
+
 }
 .buscar input{
     padding: 9px 10px 9px 32px;
@@ -114,76 +123,51 @@
     transition: all 2s;
 }
 .buscar input:hover{
-    width:16.5%;
+    width:70%;
     background-color: #fff;
     border-color: rgb(11, 68, 182);
 }
 .barassimovil{
-    transform: translateY(200px);
-    margin-top: -10%;
-    z-index: 1;
+    z-index: 4;
 }
 .barassimovil img{
+    position: absolute;
+    top: 80%;
+    z-index: 4;
     width: 40%;
     animation-name: auto;
-    animation-duration: 5s;
+    animation-duration: 11s;
     animation-iteration-count: infinite;
 }
-.rueda1 img{
-    width: 6%;
-    border-radius: 50%;
-    position: absolute;
-    left: 5.5%;
-    bottom:-48%;
-    animation-name: rueda1;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-
-}
-.rueda2 img{
-    width: 6%;
-    border-radius: 50%;
-    position: absolute;
-    left: 25.5%;
-    bottom:-48%;
-    animation-name: rueda2;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-@keyframes rueda1{
+@keyframes auto{
     0%{
-        left:5.5%;
-        transform: rotate(0deg);
+        left: -35%;
     }
     100%{
-        left: 53%;
-        transform: rotate(360deg);
+        left: 109%; 
     }
-}
-@keyframes rueda2{
-    0%{
-        left:25.5%;
-        transform: rotate(0deg);
-    }
-    100%{
-        left: 73%;
-        transform: rotate(360deg);
-    }
+    
 }
 .humo img{
-    overflow: hidden;
-    width: 10%;
+    width: 30%;
 }
 .humo{
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    left: -40%;
+    bottom: -25%;
     animation-name: humo;
-    animation-duration: 5s;
+    animation-duration: 11s;
     animation-iteration-count: infinite;
 }
+
 
 @keyframes humo {
     0%{
-        transform: translate(-120px, 70px);
+        left: -43%;
         opacity: 0%;
+        width: 30%;
     }
     10%{
         opacity: 0%;
@@ -209,53 +193,53 @@
     80%{
         opacity: 100%; 
     }
-    90%{
-        opacity: 0%; 
-    }
     100%{
-        transform: translate(480px, 70px);
-        opacity: 100%;
+        left: 101%;
+        opacity: 0%;
+        width: 30%;
     }
      
 }
 .calle img{
     width:100%;
-    margin-bottom: -15%;
+    position: relative;
+    margin-top: 40%;
 }
 
-@keyframes auto{
-    0%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(600px)
-    }
-    
-}
 .cartel{
     width: 98%;
     display: flex;
     flex-wrap: wrap;
-    transform: translateY(-200px);
-    justify-content: flex-end;
+   justify-content: flex-end;
+   position: absolute;
+   bottom: 4%;
+   z-index: 2;
 }
 .cartel img{
-    width: 11%;
-
+    width: 10%;
+    position: absolute;
+    z-index: 1;
 }
 .cartel h3{
     font-family: 'Shadows Into Light', cursive;
-    transform: translateX(110px);
+    position: absolute;
+    z-index: 2;
+    right: 2%;
+    top: 5%;
     text-align: center;
     font-size: 28px;
     color: white;
+    line-height : 35px;
 }
 .cartel a{
     text-decoration: none;
     color: #68B0E0;
 }
 .cartel a:hover{
-    color: rgb(255, 113, 113);
+    color: rgb(208, 208, 208);
+    transition: color 0.5s linear 0.2s;
+    font-size: 40px;
+    top: 7%;
 }
 .footer{
     width: 100%;
@@ -264,7 +248,8 @@
     display: flex;
     justify-content: center;
     background-color: #848484;
-    margin-top: -4%;
+    bottom: -65%;
+    position: absolute;
 }
 .contenedora{
     display: none;
