@@ -312,6 +312,10 @@
     background-color: #fff;
     border-color: rgb(11, 68, 182);
 }
+.buscar{
+    width: 100%;
+    right: 0%
+}
 .barassimovil{
     display: none;
 }
@@ -336,6 +340,8 @@
 }
 .explicando img{
     width: 100%;
+    position: absolute;
+    top: 60%;
 }
 .mano img{
     width: 30%;
@@ -367,10 +373,15 @@
     border-radius: 5px;
     padding: 3%;
 }
-.nubes{
+.nubes, .humo{
     display: none;
 }
 .rueda1, .rueda2{
     display: none;
+}
+.footer{
+    position: absolute;
+    bottom: -11.5%;
+
 }
 }
